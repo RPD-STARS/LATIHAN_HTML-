@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .gambar{
+           background-image: url(../../Wallpaper/download12.jpg);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           width: 225px;
+           height: 225px;
+           -webkit-filter: blur(5px) grayscale(0.9);
+       }
+
+
+       .gambar:hover{
+           -webkit-filter: blur(0) grayscale(0);
+           transition: 0.5s;
+       }
+
+
+       .kotak1{
+           width: 100px;
+           height: 100px;
+           background-color: aqua;
+           margin: auto;
+           transition: 0.75s;
+       }
+
+       .pembungkus:hover .kotak1{
+           background-color: navy;
+           transform: translate(550px) rotate(180deg);
+       }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div class="gambar">
+        <img src="../../Wallpaper/download12.jpg" alt="">
+    </div>
+    <br><br><br>
+
+
+    <div class="pembungkus">
+
+        <div class="kotak1"></div>
+    </div>
+    </body>
+</html>

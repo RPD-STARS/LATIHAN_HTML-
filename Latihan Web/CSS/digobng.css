@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: rgba(14, 68, 138, 0.74);
+    width: 1050px;
+}
+
+#hiaaa {
+    font-size: 40px;
+    color: #1877f2;
+}
+
+.sosmed {
+    font-size: medium;
+    color: rgb(22, 112, 172);
+    text-decoration: none;
+    font-size: small;
+}
+
+.sosmed:hover {
+    text-decoration: underline;
+}
+
+
+.hibong {
+    display: inline;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 13px;
+}
+
+.hibong:hover {
+    text-decoration: underline;
+}
+
+.bingo {
+    color: white;
+    background-color: rgba(14, 68, 138, 0.74);
+    width: 550px;
+    font-size: 16px;
+
+}
+
+
+
+.link {
+    color: rgb(60, 121, 202);
+    text-decoration: none;
+    font-size: small;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

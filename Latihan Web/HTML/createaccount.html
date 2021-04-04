@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikin Akun</title>
+    <style>
+    body{
+        background-color: rgb(30, 103, 185);
+        font-family:overpass;
+    }
+
+    @font-face {
+        font-family:overpass;
+        src: url(../Overpass/overpass/overpass-light.otf)
+    }
+
+
+    .login{
+        background-color: whitesmoke;
+        width: 650px;
+        height: 550px;
+        border-radius: 10px;
+        margin: auto;
+        position: relative;
+        top: 200px;
+    }
+
+    .login h1{
+        text-align: center;
+        padding-top: 50px;
+        text-transform:capitalize;
+    }
+
+    .input{
+        border: 5px solid white;
+        border-radius: 15px;
+        width: 70%;
+        height: 25px;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 90px;
+    }
+
+    .digo{
+        width: 250px;
+        width: 30%;
+        border-radius: 15px;
+        border: 5px solid white;
+        height: 25px;
+        margin: 10px;
+        padding: 10px;
+        padding-right: 15px;
+        margin-top: 10px;
+        margin-left: 10px;
+        position: relative;
+        left: 80px;
+    }
+
+
+
+    .bingo{
+        background-color:  rgb(30, 103, 185);
+        border: 5px solid  rgb(30, 103, 185);
+        border-radius: 15px;
+        width: 75%;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 90px;
+        color: white;
+    }
+
+
+    .bingo:hover{
+        background-color:  rgb(63, 106, 156);
+        border: 5px solid rgb(63, 106, 156);
+    }
+
+    .nibba{
+        text-align: center;
+        text-decoration: none;
+        margin: auto;
+        color: rgb(30, 103, 185);
+        font-size: 15px;
+        margin-left: 40%;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .nibba:hover{
+        text-decoration: underline;
+    }
+
+    .line{
+        width: 80%;
+        margin-top: 15px;
+        background-color: whitesmoke;
+    }
+
+
+
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="login">
+        <h1>Create an Account!</h1>
+        <div class="insertdata">
+            <form action="input data">
+                <input type="Name" id="email" class="input" placeholder="Full Name"> 
+                <br>
+                <input type="email" id="password" class="input" placeholder="Email Address"> 
+                <br>
+                <input type="password" placeholder="Password" class="digo">
+                <input type="password" placeholder="Repeat Password" class="digo">
+                <button type="submit" class="bingo">Register Account</button>
+                <br>
+            </form> 
+        </div>
+        <hr class="line">
+        <hr class="line">
+        <div class="account">
+            <a href="http://" class="nibba" target="_blank">Forgot Password?</a>
+            <a href="http://" class="nibba" target="_blank">Create an Account!</a>
+        </div>
+    </div>
+</body>
+</html>

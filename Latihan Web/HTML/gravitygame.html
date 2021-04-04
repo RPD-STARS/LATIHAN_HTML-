@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+        body{
+            background-color: #C7C7C7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .upper{
+            width: 100%;
+            height: 132px;
+            position: fixed;
+            background-color: rgb(255,255,255);
+           border-top-color: rgb(0,173,239);
+           border-top-width: 8px;
+           border-top-style: solid;
+        }
+
+        .container{
+            position: relative;
+        }
+
+
+        .new{
+            position: relative;
+            top: 50px;
+            left: 25%;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: left;
+            color: black;
+            background-color: #FFFFFF;
+            margin-left: 15px;
+            margin-right: 10px;
+            font-size: 17px;
+        }
+
+
+        .login a{
+            position: relative;
+            top: 25px;
+            left: 70%;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            padding: 5px 25px 5px 25px;
+            line-height: 26px;
+            box-sizing: border-box;
+            margin-left: 10px;
+        }
+
+        .login a:nth-child(1){
+            background-color:  #2880D2;
+            height: 37px;
+            width: 181px;
+        }
+
+        .login a:nth-child(1):hover{
+            background-color:  #437eb4;
+            text-decoration: underline;
+        }
+
+
+        
+
+        .login a:nth-child(2){
+            background-color: #00b369;
+            height: 37px;
+            width: 132px;
+        }
+
+
+        .login a:nth-child(2):hover{
+            background-color: #278a61;
+            text-decoration: underline;
+        }
+
+        .main{
+            height: 302px;
+            width: 550px;
+            padding: 30px 10px 40px 10px;
+            border-radius: 10px;
+            background-color: white;
+            margin: auto;
+            position: absolute;
+            top: 250px;
+            left: 35%;
+            border-bottom: 10px solid #00ADEF;
+        }
+
+        .input{
+            height: 38px;
+            width: 530px;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: 1px solid #CED4DA;
+            padding: 6px 12px 6px 12px;
+        }
+
+
+        .main button{
+            margin-top: 15px;
+            text-align: center;
+            height: 50px;
+            width: 555px;
+            background-color: #00ACEF;
+            color: white;
+            font-size: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #00ACEF;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 6px 12px 6px 12px;
+            padding-right: 10px;
+            display: inline-block;
+            line-height: 30px;
+        }
+
+        .main button:hover{
+            text-decoration: underline; 
+            
+        }
+
+
+        .main a{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 5px;
+            margin: 10px 5px;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+        }
+
+        .jango{
+            height: 40px;
+            width: 260px;
+            background-color: #F79515;
+            border: 1px solid #F79515;
+            padding: 8px;
+        }
+
+        .jango:hover{
+            background-color:#d87939;
+            text-decoration: underline;
+        }
+
+
+        .bingo{
+            height: 40px;
+            width: 265px;
+            background-color: #01B168;
+            border: 1px solid #01B168;
+            padding: 8px;
+        }
+
+        .bingo:hover{
+            background-color:#1b8f5f;
+            text-decoration: underline;
+        }
+
+        .footer{
+            height: 150px;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            top: 870px;
+            border-top: 3px solid #00ACEF ;
+        }
+
+        .footer p{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 20px;
+            left: 322px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="upper">
+            <div class="gambar"></div>
+            <a href="http://" target="_blank" rel="noopener noreferrer" class="new">GAMES</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer" class="new">NEWS</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer" class="new">SUPPORT</a>
+            <div class="login">
+                <a href="#" target="_blank" rel="noopener noreferrer">My Account</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Register</a>
+            </div>
+            
+            <div class="main">
+                <form action="input data ">
+                    <input type="id" id="id" class="input" placeholder="ID">
+                    <br>
+                    <input type="password" id="password" class="input" placeholder="Password">
+                    <br>
+                    <button type="submit">LOGIN</button>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="jango">LUPA PASSWORD</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="bingo">VERIFIKASI EMAIL</a>
+                    <p>*Belum Punya ID <a href="http://">Daftar Disini</a></p>
+                </form>
+            </div>
+            <div class="footer">
+                <p>Copyright © GRAVITY GAME LINK, GRAVITY CO., Ltd. ALL Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
